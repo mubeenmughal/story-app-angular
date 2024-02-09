@@ -1,0 +1,32 @@
+<div class="main">
+  <div class="container">
+    <h2 class="mt-5 mb-4">Angular Stripe Checkout Example</h2>
+  </div>
+  <div class="payment-form">
+    <p>Press to pay bill</p>
+    <div class="button-class">
+      <button type="submit" mat-raised-button (click)="makePayment(15)" class="button">
+        Pay $15
+      </button>
+    </div>
+  </div>
+</div>
+
+<ng-container *ngIf="stripeData !== undefined">
+  <div class="form">
+    <div class="my-sample-form">
+      <h1 class="heading">Stripe Token Details</h1>
+      <h4>Client ip : {{ stripeData.stripeToken.client_ip }}</h4>
+      <h4>Email : {{ stripeData.stripeToken.email }}</h4>
+      <h4>Id : {{ stripeData.stripeToken.id }}</h4>
+      <h1 class="heading">Card Details</h1>
+      <h4>id : {{ stripeData.stripeToken.card.id }}</h4>
+      <h4>Brand : {{ stripeData.stripeToken.card.brand }}</h4>
+      <h4>Expiry Month : {{ stripeData.stripeToken.card.exp_month }}</h4>
+      <h4>Expiry Year : {{ stripeData.stripeToken.card.exp_year }}</h4>
+      <h4>Funding : {{ stripeData.stripeToken.card.funding }}</h4>
+      <h4>Last 4 Digits : {{ stripeData.stripeToken.card.last4 }}</h4>
+      <h4>Country : {{ stripeData.stripeToken.card.country }}</h4>
+    </div>
+  </div>
+</ng-container>

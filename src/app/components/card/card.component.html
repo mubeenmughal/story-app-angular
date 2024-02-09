@@ -1,0 +1,42 @@
+<mat-card class="card">
+  <div (click)="displayRecord(data)">
+    <mat-card-header>
+      <img mat-card-avatar [src]="data.avatar" />
+      <mat-card-title>{{ data.name }}</mat-card-title>
+      <mat-card-subtitle>{{ data.userName }}</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      mat-card-image
+      [src]="data.img"
+      alt="Photo of a Shiba Inu"
+      height="150"
+    />
+    <mat-card-content>
+      <p class="short-paragraph" *ngIf="data.description">
+        {{ data.description }}
+      </p>
+      <p class="short-paragraph" *ngIf="!data.description">
+        {{ defaultDescription }}
+      </p>
+    </mat-card-content>
+  </div>
+  <mat-card-actions>
+    <button
+      (click)="updateLikeStatus()"
+      *ngIf="data.like"
+      mat-icon-button
+      color="warn"
+    >
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button (click)="updateLikeStatus()" *ngIf="!data.like" mat-icon-button>
+      <mat-icon class="heart-color">favorite_border</mat-icon>
+    </button>
+    <button (click)="openEditDialog()" mat-raised-button color="primary">
+      EDIT
+    </button>
+    <button (click)="deleteRecord(data.id)" mat-raised-button color="warn">
+      DELETE
+    </button>
+  </mat-card-actions>
+</mat-card>

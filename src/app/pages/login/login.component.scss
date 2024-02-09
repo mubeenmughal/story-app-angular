@@ -1,0 +1,34 @@
+.login-wrapper{
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  width: 500px;
+}
+
+.example-full-width{
+  width: 100%;
+}
+
+mat-card-header{
+  display: flex;
+  justify-content: center;
+}
+
+.color{
+  background-color: blueviolet;
+  color: white;
+}
+
+.button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-color{
+  text-decoration: blueviolet;
+  font-weight: 400;
+}

@@ -1,0 +1,28 @@
+.a-decor {
+  text-decoration: none;
+  color: black;
+}
+
+table {
+  width: 100%;
+}
+
+.table {
+  width: 80%;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row-hover:hover {
+  background-color: rgb(223, 221, 221);
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkgrey;
+}

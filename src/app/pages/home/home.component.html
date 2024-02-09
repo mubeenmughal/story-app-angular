@@ -1,0 +1,19 @@
+<div class="create-card-button">
+  <button (click)="openDialog()" mat-raised-button class="button-color">
+    Create Card
+  </button>
+</div>
+
+<div class="card">
+  <ng-container *ngFor="let card of data | async">
+    <app-card (result)="afterChangeInData($event)" [data]="card"></app-card>
+  </ng-container>
+</div>
+
+<mat-paginator
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOption"
+  showFirstLastButtons
+  aria-label="Select page of periodic elements"
+>
+</mat-paginator>

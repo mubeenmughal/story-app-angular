@@ -1,0 +1,30 @@
+.full-width {
+  width: 100%;
+}
+
+.color {
+  background-color: blueviolet;
+  color: white;
+}
+
+.login-wrapper {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-color {
+  text-decoration: blueviolet;
+  font-weight: 400;
+}

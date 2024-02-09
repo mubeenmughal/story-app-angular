@@ -1,0 +1,63 @@
+.main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  width: 25%;
+  margin-top: 10vh;
+  border-color: rgb(244, 242, 246);
+  min-height: 220px;
+  box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%),
+    0 30px 60px -30px rgb(0 0 0 / 30%), inset 0 -2px 6px 0 rgb(10 37 64 / 35%);
+  background-color: #fefafa;
+  padding: 10px;
+  color: rgb(179, 183, 186);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.payment-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  color: white;
+  background-color: rgb(3, 1, 6);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.button-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-sample-form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #8d8d8d;
+}
+
+.form{
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #8d8d8d;
+}
+
+.heading{
+  display: flex;
+  justify-content: center
+}

@@ -1,0 +1,39 @@
+<header>
+  <div class="header-inner">
+    <mat-toolbar class="background-color">
+      <mat-toolbar-row class="tool-head">
+        <span class="bread">
+          <strong class="head">{{ name }}</strong>
+          <div class="head">
+            <span *ngFor="let item of routes">
+              <a [matTooltip]="item.title" [routerLink]="item.route">
+                {{ item.title }}
+              </a>
+            </span>
+          </div>
+        </span>
+        <button
+          mat-icon-button
+          [matMenuTriggerFor]="menu"
+          aria-label="Example icon-button with a menu"
+          matTooltip="open menu"
+        >
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+          <ng-container *ngFor="let item of menuContent">
+            <button
+              [routerLink]="item.route"
+              [disabled]="item.disabled"
+              mat-menu-item
+            >
+              <mat-icon>{{ item.icon }}</mat-icon>
+              <span>{{ item.title }}</span>
+            </button>
+          </ng-container>
+        </mat-menu>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+</header>

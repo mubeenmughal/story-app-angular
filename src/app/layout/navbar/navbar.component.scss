@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 8vh;
+  width: 100%;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.tool-head {
+  justify-content: space-between !important;
+}
+
+.head > span {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+strong {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+}
+
+.head > span > a {
+  text-decoration: none;
+  color: white;
+}
+
+.head > span > a:hover {
+  color: rgb(106, 8, 155);
+}
+
+.bread {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.background-color {
+  background-color: blueviolet;
+  color: white;
+}
+
+header {
+  height: 70px;
+}
+
+.header-inner {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
